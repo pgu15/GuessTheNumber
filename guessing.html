@@ -1,0 +1,18 @@
+<script>
+    let num = Math.floor(Math.random() * 100) + 1;
+    console.log(num);
+    let ans;
+    
+    while(ans != num){
+        ans = prompt("Guess the number: ");
+
+        if(ans > num)
+            alert("Your guess is too high. Try again!");
+
+        else if(ans < num)
+            alert("Your guess is too low. Try again!");
+
+    }
+    alert("You got it!");
+
+</script>
